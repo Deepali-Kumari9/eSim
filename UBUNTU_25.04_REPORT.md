@@ -39,6 +39,20 @@
 - `verilator` and `ngspice` are not installed.
 - I did not complete the NGHDL/Ngspice build because of time. This is not tested.
 
+  ## Code changes (diff summary)
+
+**nghdl/install-nghdl.sh, line 46**
+```diff
+- "24.04")
++ "24.04"|"25.04")
+```
+
+**nghdl/install-nghdl-scripts/install-nghdl-24.04.sh and install-eSim-scripts/install-eSim-24.04.sh**
+```diff
+- libcanberra-gtk-module
++ libcanberra-gtk3-module
+```
+
 ## Summary
 | Item | Count |
 |---|---|
